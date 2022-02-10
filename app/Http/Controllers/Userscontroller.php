@@ -11,4 +11,10 @@ class Userscontroller extends Controller
         
         return view('bilat',["name"=>$name]);
     }
+
+    function viewLoad()
+    {
+        $data=['anil','peter','Al','moralde',];
+        return view('users',['users'=>$data]);
+    }
 }

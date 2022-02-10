@@ -26,9 +26,12 @@ Route::get('/', function () {
 // });
 
 
-Route::view("/about", 'about'); 
+Route::view("/about", 'about');
+
 Route::get("users/{user}",[Users::class,'index']);  
 
 Route::view("/gamit", 'users');
 
 Route::get("/bilat/{name}",[Userscontroller::class,'bil']);
+
+Route::get("/boto",[Userscontroller::class,'viewLoad']);
